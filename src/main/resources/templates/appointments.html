@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hospital Management System</title>
-    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="stylesheet" href="../static/css/styles.css" th:href="@{/css/styles.css}">
         <style>
             /* Optional CSS for styling */
             /*body {
@@ -29,7 +28,7 @@
 <header>
     <nav class="navbar">
         <div class="navbar-left">
-            <img src="../static/images/medical-logo.jpg" alt="My Logo" class="logo">
+            <img src="../static/images/medical-logo.jpg"  th:src="@{/images/medical-logo.jpg}"   alt="My Logo" class="logo">
         </div>
         <div class="navbar-center">
             <h1>Health First Clinic</h1>
@@ -37,12 +36,12 @@
         <div class="navbar-right">
             <nav>
                 <ul class="nav-links">
-                    <li><a href="index.html#about">About Us</a></li>
-                    <li><a href="../templates/template-hms-location.html#services">Services</a></li>
-                    <li><a href="../templates/template-hms-location.html#location">Location</a></li>
-                    <li><a href="index.html#contact">Reach out</a></li>
-                    <li><a href="user-registration.html#registrationForm">Registration</a></li>
-                    <li><a href="../templates/template-hms-appointments.html#appointmentForm"> Schedule an Appointment</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><a href="#">Reach out</a></li>
+                    <li><a href="user-registration.html"  th:href="@{/userRegistration}">Registration</a></li>
+                    <li><a href="appointments.html"> Schedule an Appointment</a></li>
                 </ul>
             </nav>
         </div>
@@ -73,7 +72,7 @@
     <h2>Appointments</h2>
     <ul style="color:white" id="appointmentList"></ul>
 </section>
-<script src="../static/js/home.js"></script>
-<script src="../static/js/script-hms-appointments.js"></script>
+<!--<script src="../static/js/home.js"></script>-->
+<!--<script src="../static/js/script-hms-appointments.js"></script>-->
 </body>
 </html>
