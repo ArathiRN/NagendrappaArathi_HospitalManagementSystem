@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/static/images/image-stethoscope.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: steelblue; /* Semi-transparent background  */;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    flex: auto;
+}
+
+header .logo {
+    height: 80px;  /*Adjust the size of the logo as needed*/
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    font-size: large;
+    flex-direction: row;
+    margin: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar-left {
+    flex: 1;
+    text-align: left;
+}
+
+.navbar-center {
+    flex: 2;
+    text-align: center;
+    font-size: large;
+}
+
+.navbar-right {
+    flex: 1;
+    display: inline;
+    flex-wrap: wrap;
+}
+
+section {
+    padding: 2em;
+    margin: 1em auto;
+    max-width: 600px;
+    background: steelblue;
+    align-content: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: fit-content;
+    font-size: medium;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.8);/*semi-transparent background for form */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+form label {
+    margin: 0.5em 0 0.2em;
+}
+
+form input, form textarea {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid steelblue;
+    border-radius: 4px;
+}
+
+form button {
+    padding:10px;
+    margin-top: 10px;
+    background-color:steelblue;
+    color: white;
+    border: none;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: darkblue;
+}
+
+footer {
+    text-align: center;
+    padding: 0 0;
+    background-color: steelblue;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+table{
+    color: white;
+    font-size: medium;
+    align-self: center;
+    height: auto;
+    width: auto;
+}
